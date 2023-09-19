@@ -28,14 +28,18 @@ nav ul li {
     color: white;
     justify-content: center;
 }
+nav ul li:first-child {
+    border-left: 2px;
+}
 
 nav ul li ul {
     display: none;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    background: linear-gradient(45deg, #f06292, #9575cd);
+    background: linear-gradient(0deg, #f06292, #9575cd);
     border-radius: 10px;
+    border: 2px white;
     list-style-type: none;
     text-align: center;
     z-index: 1000;
@@ -51,7 +55,11 @@ nav ul li ul li {
 
 a{
     color: #ffeefe;
+    text-decoration: none;
+}
 
+a:hover{
+    color: lightblue;
 }
 
 nav li:hover ul {
